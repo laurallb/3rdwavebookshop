@@ -36,6 +36,9 @@ namespace BookShop.DAL
                 };
             book.Id = Convert.ToInt32(SqlHelper.ExecuteScalar(this.connection, CommandType.Text, sql, para));
 
+           
+            ///
+
         }
 
         public bool ModifyBook(Book book)
